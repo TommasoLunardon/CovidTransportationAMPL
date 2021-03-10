@@ -1,0 +1,13 @@
+#COVID.run
+model COVID.mod;
+data COVID.dat;
+
+option solver "./cplex";
+
+
+solve;
+
+option display_1col 50;
+option omit_zero_rows 1;
+
+display x;
